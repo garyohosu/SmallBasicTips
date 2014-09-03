@@ -1,4 +1,4 @@
-SmallBasic
+SmallBasicTips
 ==========
 
-SmallBasic
+SmallBasicTips
