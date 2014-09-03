@@ -1,0 +1,27 @@
+' bound Ball
+'
+'date                name  ver     comment
+'2014/09/03 garyo  0.00  release
+'
+x=0
+y=0
+dx=1
+dy=1
+r=30
+maxX=GraphicsWindow.Width-r
+maxY=GraphicsWindow.Height-r
+
+ball = Shapes.AddEllipse(r,r)
+
+loop:
+  Shapes.Move(ball, x, y )
+  x=x+dx
+  y=y+dy
+  If x<=0 Or x>maxX Then
+    dx=-dx
+  EndIf
+  If y<=0 Or y>maxY Then
+    dy=-dy
+  EndIf
+  Program.Delay(10)
+Goto loop
