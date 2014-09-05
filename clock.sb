@@ -1,0 +1,23 @@
+' clock
+'
+'date       name   ver   comment
+'2014/09/05 garyo  0.00  release
+'
+
+Timer.Interval=100  'ms
+Timer.Tick=Timer1
+
+GraphicsWindow.Width=300
+GraphicsWindow.Height=100
+GraphicsWindow.Show()
+
+
+Sub Timer1  'Timer1 timeout
+  GraphicsWindow.Clear()
+  msg = Clock.Date + " " + Clock.Time
+  GraphicsWindow.PenColor="Blue"
+  GraphicsWindow.FontSize=20
+  GraphicsWindow.DrawText(10,50,msg)
+EndSub
+
+  
